@@ -6,7 +6,7 @@ import colors from "../../config/colors";
 const AppButton = (props) => {
   return (
     <TouchableOpacity
-      style={[styles.button, { backgroundColor: props.color }]}
+      style={[styles.button, { backgroundColor: colors[props.color] }]}
       onPress={props.onPress}
     >
       <Text style={styles.text}>{props.title}</Text>
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 15,
     width: "100%",
-    marginBottom: 25,
+    marginVertical: 10,
   },
   text: {
     color: colors.white,
