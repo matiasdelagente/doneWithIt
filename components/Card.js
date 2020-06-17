@@ -1,8 +1,8 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
-import AppText from "../../components/AppText/AppText";
-import colors from "../../config/colors";
+import AppText from "./AppText";
+import colors from "../config/colors";
 
 const Card = (props) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
-import AppText from "../components/AppText/AppText";
+import AppText from "./AppText";
 import colors from "../config/colors";
 
 const ListItem = ({ title, subtitle, image }) => {
