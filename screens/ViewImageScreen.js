@@ -8,10 +8,10 @@ const ViewImageScreen = (props) => {
   return (
     <View style={styles.screen}>
       <View style={styles.closeBtn}>
-        <MaterialCommunityIcons name="close" size={36} color="white" />
+        <MaterialCommunityIcons name="close" size={35} color="white" />
       </View>
       <View style={styles.deleteBtn}>
-        <MaterialCommunityIcons name="trash-can-outline" size={36} color="white" />
+        <MaterialCommunityIcons name="trash-can-outline" size={35} color="white" />
       </View>
       <Image
         source={require("../assets/chair.jpg")}
@@ -28,20 +28,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.black,
   },
   closeBtn: {
-    height: 50,
-    width: 50,
     position: "absolute",
     top: 40,
-    left: 20,
-    alignItems: "center",
+    left: 30,
   },
   deleteBtn: {
-    height: 50,
-    width: 50,
     position: "absolute",
     top: 40,
-    right: 20,
-    alignItems: "center",
+    right: 30,
   },
   image: {
     height: "100%",
