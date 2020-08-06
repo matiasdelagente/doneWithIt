@@ -1,10 +1,13 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import WelcomeScreen from "./screens/WelcomeScreen";
-import ViewImageScreen from "./screens/ViewImageScreen";
+import { NavigationContainer } from "@react-navigation/native";
+
+import AppNavigator from "./components/navigation/AppNavigator";
+import navigationTheme from "./components/navigation/navigationTheme";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return (
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
+  );
 }
-
-const styles = StyleSheet.create({});
