@@ -1,22 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+
+import AppNavigator from "./components/navigation/AppNavigator";
+import navigationTheme from "./components/navigation/navigationTheme";
 
 export default function App() {
-  let x = 1;
-  console.log("App executed");
-
   return (
-    <View style={styles.container}>
-      <Text>Hello World Android !</Text>
-    </View>
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
