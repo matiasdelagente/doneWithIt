@@ -13,9 +13,9 @@ const ListingDetailsScreen = ({ navigation, route: { params } }) => {
         <Text style={styles.price}>${params.subTitle}</Text>
         <View style={styles.userContainer}>
           <ListItem
-            title="Mosh Hamedani"
+            title="Mati Benincasa"
             subtitle="5 listings"
-            image={require("../assets/mosh.jpg")}
+            image={require("../assets/benincasa.jpg")}
           />
         </View>
       </View>

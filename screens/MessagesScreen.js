@@ -13,13 +13,13 @@ const initialMessages = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    image: require("../assets/mosh.jpg"),
+    image: require("../assets/benincasa.jpg"),
   },
   {
     id: 2,
     title: "T2",
     description: "D2",
-    image: require("../assets/mosh.jpg"),
+    image: require("../assets/benincasa.jpg"),
   },
 ];
 
@@ -56,7 +56,7 @@ const MessagesScreen = () => {
               id: 3,
               title: "T3",
               description: "D3",
-              image: require("../assets/mosh.jpg"),
+              image: require("../assets/benincasa.jpg"),
             },
           ]);
         }}

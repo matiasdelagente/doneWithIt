@@ -32,9 +32,9 @@ const MyAccountScreen = ({ navigation }) => {
     <Screen style={styles.screen}>
       <View style={styles.container}>
         <ListItem
-          image={require("../assets/mosh.jpg")}
-          title="Mosh"
-          subTitle="mosh@gmail.com"
+          image={require("../assets/benincasa.jpg")}
+          title="Mati"
+          subTitle="mati.benincasa@gmail.com"
         />
       </View>
       <View style={styles.container}>
