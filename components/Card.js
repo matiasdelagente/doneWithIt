@@ -1,18 +1,21 @@
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
 
-import AppText from "./AppText";
+import Text from "./Text";
 import colors from "../config/colors";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
-const Card = (props) => {
+const Card = ({ title, subTitle, image, onPress }) => {
   return (
-    <View style={styles.card}>
-      <Image source={require("../../assets/jacket.jpg")} style={styles.image} />
-      <View style={styles.detailsContainer}>
-        <AppText style={styles.title}>{props.title}</AppText>
-        <AppText style={styles.subTitle}>{props.subTitle}</AppText>
+    <TouchableWithoutFeedback onPress={onPress}>
+      <View style={styles.card}>
+        <Image source={image} style={styles.image} />
+        <View style={styles.detailsContainer}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.subTitle}>{subTitle}</Text>
+        </View>
       </View>
-    </View>
+    </TouchableWithoutFeedback>
   );
 };
 
@@ -21,6 +24,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: "#fff",
     overflow: "hidden",
+    marginBottom: 20,
   },
   image: {
     width: "100%",
